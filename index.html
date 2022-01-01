@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Twinkle+Star&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Anurag kushwaha</title>
+  </head>
+
+  <body>
+    <div class="overflow-menu shadow">
+      <ul class="df row">
+        <div
+          class="close"
+          onclick="hidemenu
+            ()"
+        >
+        <i class="far fa-times-circle"></i>
+        </div>
+        <li>
+          <a href="#home"> <i class="fas fa-home"></i>Home </a>
+        </li>
+        <li>
+          <a href="#about"><i class="fas fa-user-alt"></i>About</a>
+        </li>
+        <li>
+          <a href="#skillset"> <i class="fas fa-fill-drip"></i>Skills</a>
+        </li>
+        <li>
+          <a href="#services"> <i class="fas fa-cogs"></i>Services</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-envelope"></i>Message </a>
+        </li>
+      </ul>
+    </div>
+    <div class="blur-screen" onclick="hidemenu()"></div>
+    <section>
+      <nav id="menu">
+        <div
+          class="logo"
+          style="font-size: 26px; font-family: 'Twinkle Star', cursive"
+        >
+          Anurag kushwaha
+        </div>
+        <div class="menu">
+          <div onclick="showmenu()">
+            <i class="fas fa-bars" style="font-size: 22px"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div id="about">
+        <div class="left">
+          <div class="profile-img">
+            <img src="./assets/profile.jpg" alt="" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="description">
+            <h4>Web Developer</h4>
+            <h1 style="font-size: 40px">Anurag kushwaha</h1>
+            <p>
+              I'm a MERN Full Stack Web Developer who builds efficient and
+              scalable web apps prioritizing features and enhanced user
+              experience. I love building Web Apps and I am continuously
+              improving my skillsets.
+            </p>
+            <div style="margin-top: 12px">
+              <a class="button" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section></section>
+
+    <script>
+      function showmenu() {
+        document.querySelector(".overflow-menu").style.left = "0px";
+        document.querySelector(".blur-screen").style.left = "0vw";
+      }
+      function hidemenu() {
+        document.querySelector(".overflow-menu").style.left = "-300px";
+        document.querySelector(".blur-screen").style.left = "-100vw";
+      }
+    </script>
+  </body>
+</html>
